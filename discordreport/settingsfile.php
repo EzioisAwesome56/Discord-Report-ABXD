@@ -1,34 +1,19 @@
 <?php
 	$settings = array(
-		"host" => array(
+		"username" => array(
 			"type" => "text",
-			"default" => "localhost",
-			"name" => "Destination host",
+			"default" => "ABXDReport",
+			"name" => "Webhook username",
 		),
-		"port" => array(
-			"type" => "integer",
-			"default" => "1234",
-			"name" => "Destination port",
+		"webhook" => array(
+			"type" => "text",
+			"default" => "",
+			"name" => "Discord webhook link",
 		),
-		"color1" => array(
-			"type" => "integer",
-			"default" => "5",
-			"name" => "Color code for highlights",
-		),
-		"color2" => array(
-			"type" => "integer",
-			"default" => "3",
-			"name" => "Color code",
-		),
-		"reportPassMatches" => array(
-			"type" => "boolean",
-			"default" => "0",
-			"name" => "Report number of password matches",
-		),
-		"reportIPMatches" => array(
-			"type" => "boolean",
-			"default" => "0",
-			"name" => "Report number of IP matches",
+		"image" => array(
+			"type" => "text",
+			"default" => "https://maxcdn.icons8.com/Share/icon/Logos//discord_logo1600.png",
+			"name" => "Webhook profile picture",
 		),
 	);
 ?>
