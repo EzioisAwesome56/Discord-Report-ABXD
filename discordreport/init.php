@@ -3,6 +3,7 @@
 function ircReport($stuff)
 {
 	$data = array("content" => $stuff, "username" => Settings::pluginGet("username"), "avatar_url" => Settings::pluginGet("image"),);
+	$data['content'] = str_replace('@', '@&#8203;', $data['content']; //zero-width space after the at sign
     $curl = curl_init(Settings::pluginGet("webhook"));
     curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
